@@ -7,12 +7,12 @@ import pandas as pd
 import numpy as np  # numpy를 import해야 함
 
 # Streamlit 제목
-st.title("주택 가격 예측 서비스!")
+st.title("질병에 따른 사망자 수 예측")
 
 # GitHub Raw 파일 URL과 모델 유형
 GITHUB_RAW_URL = "https://github.com/johyeingudachagoshipda/image1/raw/refs/heads/main/xgb_model.pkl"
 MODEL_TYPE = "XGBoost"  # "fastai", "scikit-learn Random Forest", or "XGBoost"
-CSV_FILE_URL = ""
+CSV_FILE_URL = "https://github.com/johyeingudachagoshipda/image1/raw/refs/heads/main/disease_mortality_data.csv"
 
 # GitHub에서 파일 다운로드 및 로드
 def download_model(url, output_path="model.pkl"):
